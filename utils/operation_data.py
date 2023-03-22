@@ -2,7 +2,7 @@ import json
 
 
 def open_operations_file():
-    with open('C:\\Users\\Программист\\PycharmProjects\\Course_work_3\\utils\\operations.json', encoding='utf-8') as f:
+    with open("operations.json", encoding='utf-8') as f:
         return json.load(f)
 
 
