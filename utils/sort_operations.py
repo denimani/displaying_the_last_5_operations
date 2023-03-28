@@ -13,7 +13,7 @@ def last_five_operations():
     """
     list_executed_operations = []
     count = 0
-    for operation in open_operations_file():
+    for operation in sorted(open_operations_file(), key=lambda x: x['date'], reverse=True):
         if operation['state'] == 'EXECUTED':
             count += 1
             list_executed_operations.append(operation)

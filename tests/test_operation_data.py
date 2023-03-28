@@ -1,4 +1,4 @@
-from utils.operation_data import last_five_operations
+from utils.sort_operations import last_five_operations
 
 
 def test_last_five_operations():
